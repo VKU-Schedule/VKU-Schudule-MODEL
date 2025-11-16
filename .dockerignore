@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
+# Documentation
+*.md
+README*
+
+# Test files
+test/
+tests/
+*.test.py
+*_test.py
+
+# Data files
+*.csv
+*.xlsx
+*.json
+data/
+
+# Model files (sẽ download khi chạy)
+*.pt
+*.bin
+*.safetensors
+
+# Cache
+.cache/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
