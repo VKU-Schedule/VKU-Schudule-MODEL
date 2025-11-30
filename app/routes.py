@@ -72,7 +72,8 @@ def predict_endpoint():
     print(result["result"])
 
     # forward to server nsga2
-    server_nsga2_url = 'http://20.106.16.223:8001/api/schedule'
+    # server_nsga2_url = 'http://20.106.16.223:8001/api/schedule'
+    server_nsga2_url = 'http://localhost:5001/api/schedule'
     try:
         response_from_server_nsga2 = requests.post(
             server_nsga2_url, 
@@ -97,6 +98,8 @@ def predict_endpoint():
 
     return jsonify({
         "message": message,
+        "prompt": prompt,
+        "parsed_prompt": result["result"],
         "schedules": schedules
     })
 
